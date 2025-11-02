@@ -1,0 +1,72 @@
+ /*int arr1[5] = {1 , 2 , 3 , 4 , 5};
+   for(int i = 0 ; i< 5; i++){
+      printf("%d\n" , arr1[i]);
+   }
+
+   //addd the two arrays 
+   int arr2[5] = {5 , 6 , 4 , 3 , 2};
+   int result[5];
+   for(int i = 0 ; i< 5; i++){
+      result[i] = arr1[i] + arr2[i];
+   }
+
+   printf("result :");
+
+   for(int i = 0;i<5; i++){
+    printf("%d\n" , result[i]);
+   }
+
+   //find maximum element in an array  
+   int   arrr[] = {10, 20 , 3, 40, 5 ,2};
+   int min  = arrr[0];
+   for(int i = 1; i <6 ; i++){
+    if(arrr[i]<min) min= arrr[i];
+   }
+
+   printf("minimum element : %d\n" , min);
+
+   //HOW TO REVERSE AN ARRAY
+
+   /*int arr5[] = {1 , 5 , 9 , 8 ,6};
+    int n = 5;
+    for(int i = 0; i < n/2; i++){
+        int temp = arr5[i];
+        arr5[i] =  arr5[n-i-1];
+        arr5[n-i-1] = temp; 
+    }
+    for(int i = 0; i<n; i++){
+        printf("%d\n" , arr5[i]);
+    }
+    /* int aar[] = {10, 20, 30 , 40, 50};
+     int target = 30;
+     int found = 0;
+
+    // for(int i = 0; i < 5 ; i++){
+        if(aar[i]==   target){
+            printf("element found at %d" , i);
+            found = 1 ;
+            break;
+        }
+     }
+     if(!found) printf("element not found\n");*/
+
+        typedef struct  Node{
+          int data;
+          struct Node* next;
+         
+          
+        }Node;
+        Node* head =  NULL ;
+        //intialize an empty list
+
+        Node* createNode(int data){
+            Node* newNode = (Node*)malloc(sizeof(Node));
+            newNode->data = data;
+            newNODE->next = NULL;
+
+            return newNode;
+        }
+    
+    return 0;
+
+};
